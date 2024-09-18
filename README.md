@@ -2,7 +2,41 @@
 
 This repository is a collection of papers on state space modeling in medical image processing.
 
-### 1. Medical Image Segmentation
+
+
+## 1 SSM & Mamba
+### 1.1 History of SSM
+- Hippo: Recurrent memory with optimal polynomial projections [paper](https://proceedings.neurips.cc/paper_files/paper/2020/file/102f0bb6efb3a6128a3c750dd16729be-Paper.pdf) [code](https://github.com/HazyResearch/hippo-code)
+- (S4) Efficiently modeling long sequences with structured state spaces [paper](https://arxiv.org/pdf/2111.00396) [code](https://github.com/state-spaces/s4)
+- Mamba: Linear-time sequence modeling with selective state spaces [paper](https://arxiv.org/pdf/2312.00752) [code](https://github.com/state-spaces/mamba)
+- (Mamba-2)Transformers are SSMs: Generalized models and efficient algorithms through structured state space duality [paper](https://arxiv.org/pdf/2405.21060) [code](https://github.com/state-spaces/mamba)
+***
+### 1.2 SSM variants
+- Hungry hungry hippos: Towards language modeling with state space models [paper](https://arxiv.org/pdf/2212.14052) [code](https://github.com/HazyResearch/H3)
+- Hyena hierarchy: Towards larger convolutional language models [paper](https://proceedings.mlr.press/v202/poli23a/poli23a.pdf) 
+- Liquid structural state-space models [paper](https://arxiv.org/pdf/2209.12951) [code](https://github.com/raminmh/liquid-s4)
+- S4nd: Modeling images and videos as multidimensional signals with state spaces [paper](https://proceedings.neurips.cc/paper_files/paper/2022/file/13388efc819c09564c66ab2dc8463809-Paper-Conference.pdf) 
+- Diagonal state spaces are as effective as structured state spaces [paper](https://proceedings.neurips.cc/paper_files/paper/2022/file/9156b0f6dfa9bbd18c79cc459ef5d61c-Paper-Conference.pdf) [code](https://github.com/ag1988/dss)
+- Simplified State Space Layers for Sequence Modeling [paper](https://arxiv.org/pdf/2208.04933) [code](https://github.com/lindermanlab/S5)
+- What makes convolutional models great on long sequence modeling? [paper](https://arxiv.org/pdf/2210.09298) [code](https://github.com/ctlllll/SGConv)
+***
+### 1.3 Mamba variants
+- Jamba: A hybrid transformer-mamba language model [paper](https://arxiv.org/pdf/2403.19887) [code](https://huggingface.co/ai21labs/Jamba-v0.1)
+- MoE-Mamba: Efficient Selective State Space Models with Mixture of Experts [paper](https://arxiv.org/pdf/2401.04081) [code](https://github.com/llm-random/llm-random)
+- Blackmamba: Mixture of experts for state-space models [paper](https://arxiv.org/pdf/2402.01771) [code](https://github.com/Zyphra/BlackMamba)
+- Zigma: Zigzag mamba diffusion model [paper](https://arxiv.org/pdf/2403.13802) 
+- Vision mamba: Efficient visual representation learning with bidirectional state space model [paper](https://arxiv.org/pdf/2401.09417) [code](https://github.com/hustvl/Vim)
+- Vmamba: Visual state space model [paper](https://arxiv.org/pdf/2401.10166) [code](https://github.com/MzeroMiko/VMamba)
+- Mamba-ND: Selective State Space Modeling for Multi-Dimensional Data [paper](https://arxiv.org/pdf/2402.05892) [code](https://github.com/jacklishufan/Mamba-ND)
+- PlainMamba: Improving Non-Hierarchical
+Mamba in Visual Recognition [paper](https://arxiv.org/pdf/2403.17695) [code](https://github.com/ChenhongyiYang/PlainMamba)
+- LocalMamba: Visual State Space Model with Windowed Selective Scan [paper](https://arxiv.org/pdf/2403.09338) [code](https://github.com/hunto/LocalMamba)
+- EfficientVMamba: Atrous Selective Scan for
+Light Weight Visual Mamba [paper](https://arxiv.org/pdf/2403.09977) [code](https://github.com/TerryPei/EfficientVMamba)
+- SiMBA: Simplified Mamba-based Architecture for Vision and Multivariate Time series [paper](https://arxiv.org/pdf/2403.15360) [code](https://github.com/badripatro/Simba)
+***
+## 2 Application of SSM in medical images
+### 2.1  Medical Image Segmentation
 - U-Mamba: Enhancing Long-range Dependency for Biomedical Image Segmentation [paper]([arxiv.org/pdf/2401.04722](https://arxiv.org/pdf/2401.04722)) [code](https://github.com/bowang-lab/U-Mamba)
 - SegMamba: Long-range Sequential Modeling Mamba For 3D Medical Image Segmentation [paper](https://arxiv.org/pdf/2401.13560) [code](https://github.com/ge-xing/SegMamba)
 - Vivim: a video vision mamba for medical video object segmentation [paper](https://arxiv.org/pdf/2401.14168) [code](https://github.com/scott-yjyang/Vivim)
@@ -44,7 +78,7 @@ Medical Image Segmentation [paper](https://arxiv.org/pdf/2407.08481)
 - Semi-mamba-unet: Pixel-level contrastive cross-supervised visual mamba-based unet for semi-supervised medical image segmentation [paper](https://arxiv.org/pdf/2402.07245) [code](https://github.com/ziyangwang007/Mamba-UNet)
 - Bidirectional Copy–Paste Mamba for Enhanced Semi-Supervised Segmentation of Transvaginal Uterine Ultrasound Images [paper](https://www.mdpi.com/2075-4418/14/13/1423) [code](https://github.com/DeepMed-Lab-ECNU/BCP)
 ***
-### 2. Medical Image Classification
+### 2.2 Medical Image Classification
 - Medmamba: Vision mamba for medical image classification [paper](https://arxiv.org/pdf/2403.03849) [code](https://github.com/YubiaoYue/MedMamba)
 - CMViM: Contrastive Masked Vim Autoencoder for 3D Multi-modal Representation Learning for AD classification [paper](https://arxiv.org/pdf/2403.16520) 
 - Mammil: Multiple instance learning for whole slide images with state space models [paper](https://arxiv.org/pdf/2403.05160) 
@@ -52,7 +86,7 @@ Medical Image Segmentation [paper](https://arxiv.org/pdf/2407.08481)
 - Vision Mamba: Cutting-Edge Classification of Alzheimer's Disease with 3D MRI Scans [paper](https://arxiv.org/pdf/2406.05757) 
 - Vision Mamba for Classification of Breast Ultrasound Images [paper](https://arxiv.org/pdf/2407.03552) 
 ***
-### 3. Medical Image Registration and Fusion
+### 2.3 Medical Image Registration and Fusion
 - Mambamorph: a mamba-based backbone with contrastive feature learning for deformable mr-ct registration [paper](https://arxiv.org/pdf/2401.13934) [code](https://github.com/Guo-Stone/MambaMorph)
 - Vmambamorph: a visual mamba-based framework with cross-scan module for deformable 3d image registration [paper](https://arxiv.org/pdf/2404.05105) [code](https://github.com/ziyangwang007/VMambaMorph)
 - Mambadfuse: A mamba-based dual-phase model for multi-modality image fusion [paper](https://arxiv.org/pdf/2404.08406)
@@ -60,7 +94,7 @@ Medical Image Segmentation [paper](https://arxiv.org/pdf/2407.08481)
 Multimodal Image Fusion with Mamba  [paper]( https://arxiv.org/pdf/2404.09498) [code](https://github.com/millieXie/FusionMamba)
 - FusionMamba: Efficient Image Fusion with State Space Model [paper](https://arxiv.org/pdf/2404.07932) [code](https://github.com/PSRben/FusionMamba)
 ***
-### 4. Medical Image Reconstruction
+### 2.4 Medical Image Reconstruction
 - Deform-Mamba Network for MRI Super-Resolution [paper](https://arxiv.org/pdf/2407.05969) 
 - Mambamir: An arbitrary-masked mamba for joint medical image reconstruction and uncertainty estimation [paper](https://arxiv.org/pdf/2402.18451) 
 - Enhancing Global Sensitivity and Uncertainty Quantification in Medical Image Reconstruction with Monte Carlo Arbitrary-Masked Mamba [paper](https://arxiv.org/pdf/2405.17659) 
@@ -68,7 +102,7 @@ Multimodal Image Fusion with Mamba  [paper]( https://arxiv.org/pdf/2404.09498) [
 - Self-Prior Guided Mamba-UNet Networks for Medical Image Super-Resolution [paper](https://arxiv.org/pdf/2407.05993)
 - Fd-vision mamba for endoscopic exposure correction [paper](https://arxiv.org/pdf/2402.06378) 
 ***
-### 5. Other Applications of SSM in Medical images
+### 2.5 Other Applications of SSM in Medical images
 - I2I-Mamba: Multi-modal medical image synthesis via selective state space modeling [paper](https://arxiv.org/pdf/2405.14022) [code](https://github.com/icon-lab/I2I-Mamba)
 - Soft Masked Mamba Diffusion Model for CT to MRI Conversion [paper](https://arxiv.org/pdf/2406.15910) [code](https://github.com/wongzbb/DiffMa-Diffusion-Mamba)
 - Cardiovascular Disease Detection from Multi-View Chest X-rays with BI-Mamba [paper](https://arxiv.org/pdf/2405.18533) [code](https://github.com/RPIDIAL/BI-Mamba)
